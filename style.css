@@ -20,6 +20,12 @@ html{
     text-align: center;
     font-family: 'cute';
 }
+.sent{
+    color:#FFFFFF;
+    font-size:3vw;
+    text-align: center;
+    font-family: cute;
+}
 
 .wrapper {   
     text-align: center;
