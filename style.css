@@ -30,7 +30,10 @@ html{
 .wrapper {   
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: wrap;
 }
 .polaroid {
     background: #FFFFFF;
@@ -41,6 +44,7 @@ html{
 }
 .item{
     max-width: 28%;
+    flex-grow: 1;
 }
 .polaroid > img {
     max-width: 100%;
@@ -96,3 +100,10 @@ html{
     right: 10%;
     transition: all 0.35s;
 }
+@media screen and (max-width: 800px) {
+    .wrapper {
+      flex-direction: column;
+      justify-self: center;
+      margin-left:40%;
+    }
+  }
